@@ -17,5 +17,7 @@ pipeline {
             }
         }
     }
+}
+def notifyBuild(String buildStatus = 'STARTED') {
     slackSend (channel: 'jenkins', color: 'bad', message: 'Assignment 4 - built', tokenCredentialId: 'cicdslak1')
 }
