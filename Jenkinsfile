@@ -16,3 +16,4 @@ Pipeline {
                 echo "Deploy"
             }
         }
+    }
