@@ -17,4 +17,5 @@ pipeline {
             }
         }
     }
+    slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'jenkins', color: 'bad', message: 'Assignment 4 - built', tokenCredentialId: 'cicdslak1', username: 'francisco.juan.v@gmail.com'
 }
